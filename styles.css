@@ -35,6 +35,7 @@ body {
 }
 .inputs-container input:nth-child(2){
   width: 20%;
+  color: black;
 }
 .inputs-container select {
   padding: 16px 12px;
