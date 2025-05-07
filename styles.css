@@ -150,6 +150,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 12px;
+    border: 2px solid white;
   }
 
   .list-details p,
