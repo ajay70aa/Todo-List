@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Inter, Impact, sans-serif;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+}
+.main h1 {
+  font-size: 96px;
+  font-weight: 700;
+  margin: 16px;
+}
+.inputs-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+.inputs-container input {
+  padding: 16px 12px;
+  font-size: 24px;
+  border: 2px solid black;
+}
+.inputs-container input:first-child{
+  width: 40%;
+}
+.inputs-container input:nth-child(2){
+  width: 20%;
+}
+.inputs-container select {
+  padding: 16px 12px;
+  font-size: 24px;
+  border: 2px solid black;
+  width: 20%;
+}
+.inputs-container button {
+  padding: 16px 12px;
+  font-size: 24px;
+  border: none;
+  background-color: black;
+  color: white;
+  width: 10%;
+  cursor: pointer;
+}
+.inputs-container button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.list-container {
+  width: 100%;
+}
+.list-container h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.list-details {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  padding: 0 24px;
+  border-radius: 12px;
+}
+.list-details p {
+  font-size: 24px;
+}
+#completedItems .list-details{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.icons-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
+.icons-container i{
+  cursor: pointer;
+  transition: scale 0.3s ease;
+}
+.icons-container i:hover{
+  scale: 1.1;
+  color: whitesmoke;
+}
+/* For screens up to 1300px */
+@media (max-width: 1300px) {
+  .main h1 {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .inputs-container input,
+  .inputs-container select,
+  .inputs-container button {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .list-details {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .list-details p {
+    font-size: 20px;
+  }
+
+  .icons-container {
+    font-size: 20px;
+  }
+}
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .inputs-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .inputs-container input,
+  .inputs-container select,
+  .inputs-container button {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .list-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+
+  .list-details p,
+  .icons-container {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .icons-container {
+    justify-content: start;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  .main {
+    padding: 0 20px;
+  }
+
+  .main h1 {
+    font-size: 36px;
+  }
+
+  .inputs-container input,
+  .inputs-container select,
+  .inputs-container button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .list-details p,
+  .icons-container {
+    font-size: 18px;
+  }
+
+  .icons-container {
+    gap: 12px;
+  }
+}
